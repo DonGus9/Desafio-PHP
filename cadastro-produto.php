@@ -9,7 +9,7 @@ if($_POST) {
     $dataAtual = date("(d-m-y)");
     $caminhoSalvo = 'img/'.$dataAtual.$nomeImg;
     $deuCertoImagem = move_uploaded_file($localTmp, $caminhoSalvo);
-    echo cadastrarProduto($_POST["nomeProduto"],$_POST["descProduto"],$caminhoSalvo,$_POST["precoProduto"], $_POST["qtdProduto"]);
+    echo cadastrarProduto($_POST["nomeProduto"],$_POST["descProduto"], $_POST["qtdProduto"],$caminhoSalvo,$_POST["precoProduto"]);
 }
 ?>
 
